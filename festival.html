@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/festival.css">
+    <title>Pasuquin</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><li><a href="https://lgupasuquin.com/"><img src="../images/logo-removebg-preview (1).png" alt=""></a></li></div>
+                <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="befall.html">Attractions</a></li>
+                        <li><a href="history.html">History</a></li>
+                </ul>
+                <a href="creator.html" class="action_btn">Creator</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="befall.html">Beaches and Falls</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="creator.html" class="action_btn">Creator</a></li>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <h1>
+                    PASUQUIN FESTIVITIES
+                </h1>
+            </section>
+        </main>
+        <div class="container">
+            <div class="card">
+                <div class="card-image img-1"></div> 
+                <h2>PANAGSANA FESTIVAL</h2>
+                <p>
+                    It is the most known festival in Pasuquin. “Panagsana” is the Ilocano term used for this old-aged occupation. It means salt making, customarily done during summer and became the leading industry among the coastal folks in the municipality. The festival is annually celebrated on December during the town fiesta. Usually celebrated with street dances during the 29th of December, participated by the 8 clustered Barangays. Then, after, a showdown is held showcasing the history, legends, the beautiful Pasuquin, and the Traditional Salt Making..
+                </p>
+        </div>
+
+        <div class="card">
+            <div class="card-image img-2"></div> 
+            <h2>SUNFLOWER FESTIVAL</h2>
+            <p>
+                An American film, Sunflowers (1996), directed by Shawn Hainsworth, an Independent U.S. Film Director, has made the Sunflower Festival internationally known. The film garnered critics recognition in the 1997 Chicago Gay and Lesbian Film Festival and other Film festivals in North America.
+            <br>
+                    Sunflower members are also active in participation of the annual town fiesta in December, the Mayflower festivities and religious celebrations like Holy Week. Indeed, they may be gay but they are truly and undoubtedly assets to the community.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-image img-3"></div> 
+            <h2>The DUMADARA FESTIVAL</h2>
+            <p>
+                An annual fluvial parade festival started by the Davileneos, particularly the Roman Catholic Parish of St. Francis of Assisi. Davila is a coastal barangay of Pasuquin, and their main harvest is dumadara (a certain fish). They associated the festival to the Blessed Virgin Mary, whom the Month of May is dedicated, as a thanksgiving for a bountiful fishing. Fisherfolks from Davila are made to decorate their bangkas (boats) for the fluvial parade. There are many activities hold also during the festival like boat race, and eating delectable grilled fish (Dumadara) with the guests.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-image img-4"></div> 
+            <h2>PANANGASIN FESTIVAL</h2>
+            <p>
+                Salt making in the shoreline barrios of Pasuquin has been one of the thriving home industries of the town. The crystal white salt produced has been a source of pride. Many people believe that the "boggo-ong" made with Pasuquin salt has disticnt flavor not found in others.
+            <br>
+                As a tribute, the municipality celebrates the ASIN Festival during its annual town fiesta in December.
+            </p>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+</html>

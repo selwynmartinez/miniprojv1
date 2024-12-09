@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/history.css">
+    <title>Pasuquin</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><li><a href="https://lgupasuquin.com/"><img src="../images/logo-removebg-preview (1).png" alt=""></a></li></div>
+                <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="befall.html">Attractions</a></li>
+                        <li><a href="history.html">History</a></li>
+                </ul>
+                <a href="creator.html" class="action_btn">Creator</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="befall.html">Beaches and Falls</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="creator.html" class="action_btn">Creator</a></li>
+            </div>
+        </nav>
+        <main>
+            <section class="hero">
+                <h1>
+                    Brief History of Pasuquin
+                </h1>
+            </section>
+        </main>
+        <div class="container">
+            <div class="card">
+                <div class="card-image img-1"></div> 
+                <p>
+                    As early as the 17th century the municipality was known as PA-ASOKEN. The name PA-ASOKEN as derived from a local dialect “pa-asok” which literally means kindling a fire to produce a smoke. The smoke was kindled on a hill called Sentinella, where the watchman monitored if there were invading ships coming from the South China Sea, to warn the settlers. Upon seeing the smoke, the settlers below the hill would assemble for war and meet the coming invaders, whether they were Chinese, Tirongs, Ibaliws, etc. at the shores of the West Philippine Sea. The Frailes and Spanish Conquistadors then named the area with the growing community “PA-ASOKEN” which later transformed into “PASUQUIN.”
+                </p>
+            </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/befall.css">
+    <title>Pasuquin</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><li><a href="https://lgupasuquin.com/"><img src="../images/logo-removebg-preview (1).png" alt=""></a></li></div>
+                <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="befall.html">Attractions</a></li>
+                        <li><a href="history.html">History</a></li>
+                </ul>
+                <a href="creator.html" class="action_btn">Creator</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="dropdown_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="befall.html">Beaches and Falls</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="creator.html" class="action_btn">Creator</a></li>
+            </div>
+        </nav>
+        <main>
+            <section class="hero">
+                <h1>
+                    Tourist Spots
+                </h1>
+                <h3>
+                    FALLS
+                </h3>
+            </section>
+        </main>
+        <div class="container">
+            <div class="card">
+                <div class="card-image img-1"></div> 
+                <h2>DARDARUMAKA FALLS</h2>
+                <p>
+                    Dardarumaka Falls is a hidden natural treasure located in Barangay Tadao, Pasuquin, Ilocos Norte. Surrounded by dense greenery and rugged terrain, the falls offer a peaceful retreat for nature enthusiasts and adventure seekers alike. The waterfall cascades gracefully over smooth rocks, forming a clear, inviting pool at its base—a perfect spot for a refreshing dip after a trek.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-2"></div> 
+                <h2>GUSOD FALLS</h2>
+                <p>
+                    Gusod Falls in Pasuquin, Ilocos Norte, is a breathtaking natural wonder known for its striking rock formations and crystal-clear waters. Located in Barangay Sta. Catalina, this hidden paradise attracts both locals and tourists seeking a serene escape amidst nature. The falls cascade over rugged rocks into a refreshing pool, making it an ideal spot for swimming and relaxation.
+                <p>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-3"></div> 
+                <h2>KALITUNGAN FALLS</h2>
+                <p>
+                    Kalitungan Falls in Pasuquin, Ilocos Norte, is a serene hidden gem in Barangay San Juan. Surrounded by lush forests, the falls cascade into a crystal-clear pool, making it a refreshing spot for adventurers. The journey to reach the falls involves navigating rivers and climbing steep trails, taking 30 minutes to an hour. Despite the challenge, the unspoiled beauty of the falls is a rewarding experience for nature lovers.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-4"></div> 
+                <h2>LUTTU-ONG FALLS</h2>
+                <p>
+                    Luttuong Falls, or Lut-ong Falls, is a hidden gem in Pasuquin, Ilocos Norte. It’s just a quick drive of about 5-10 minutes from town, then a nice 15-20 minute trek through some beautiful greenery. This chill spot is a favorite among locals because it’s peaceful and has a lot of natural beauty, even if the waterfall flow changes with the seasons. It’s a great getaway for anyone who loves nature and wants to unwind in a quiet place.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-5"></div> 
+                <h2>KINGKONG FALLS</h2>
+                <p>
+                    Kingkong Falls, or Kingkong Paradise, is a hidden gem in Sulbec, Pasuquin, Ilocos Norte, named for its towering cliffs and lush surroundings reminiscent of the movie "King Kong." Reaching this secluded spot involves an adventurous trek through rivers, woods, and rocky cliffs. The falls feature serene waters and a natural rope swing made from tree roots, letting visitors channel their inner Tarzan as they plunge into the cool pool below. Although not exceptionally tall, the stunning scenery and peaceful atmosphere make it a worthwhile destination.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-6"></div> 
+                <h2>SYPHOON FALLS</h2>
+                <p>
+                    Syphon or Hipon Falls is a hidden gem in Pasuquin, Ilocos Norte, set in a remote area. The journey involves navigating dense vegetation and balancing on a water pipe, adding to the adventure. The falls feature small cascades surrounded by lush greenery, offering a peaceful retreat for nature enthusiasts seeking an off-the-beaten-path experience.
+                </p>
+            </div>
+        </div>
+
+        <main>
+            <section class="hero">
+                <h3>
+                    Beaches
+                </h3>
+            </section>
+        </main>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
